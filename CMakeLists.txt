@@ -3,7 +3,7 @@ project(Pacman VERSION 1.0.0)
 
 include(CTest)
 enable_testing()
-
+set(CMAKE_C_COMPILER gcc)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 add_executable(Pacman main.c score.h score.c sdl_playground.h sdl_playground.c)
